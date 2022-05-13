@@ -4,7 +4,7 @@
   "description": "Website for abucom developer",
   "main": "app.js",
   "scripts": {
-    "start": "start http://127.0.0.1:3000 & nodemon -e js,mjs,json,ejs,css"
+    "start": "start http://127.0.0.1:3000 & nodemon -e js,mjs,json,ejs,css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
