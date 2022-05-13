@@ -10,4 +10,5 @@ app.listen(port, () => {
 });
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
+app.use(express.static('public'));
 
