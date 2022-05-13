@@ -14,3 +14,8 @@ app.use(expressLayouts);
 app.use(express.static('public'));
 reload(app);
 
+// roouting halaman index.ejs
+app.get('/', (req, res) => {
+    res.render('index', {layout: 'layouts/main-layout', title: 'Abucom'});
+});
+
