@@ -1,6 +1,7 @@
 // Require
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
+const reload = require('reload');
 
 // Setup
 const app = express();
@@ -11,4 +12,5 @@ app.listen(port, () => {
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 app.use(express.static('public'));
+reload(app);
 
